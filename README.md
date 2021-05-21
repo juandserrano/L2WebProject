@@ -5,6 +5,10 @@ Create an online store from scratch.
 Sell whatever we like.
 
 ## Part 1 (Visual)
+
+- [ ] Navbar
+    - [ ] Sign Up
+    - [ ] View Cart
 - [ ] Create default landing page
     - [ ] Title & Logo
     - [ ] Search bar
