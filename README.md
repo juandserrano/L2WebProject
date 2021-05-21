@@ -36,7 +36,12 @@ Sell whatever we like.
     - [ ] Add to cart button
     - [ ] Rating
 
-> We can use any framework we want.
+> We can use any framework/language we want.
+> React Frontend
+> Backend:
+    > Express.js
+    > PHP?
+    > Python (Flask, Django, FastAPI)
 
 - [ ] Cool stuff!
     - [ ] Fading animations on images
