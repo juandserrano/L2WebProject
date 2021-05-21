@@ -5,7 +5,7 @@ Create an online store from scratch.
 Sell whatever we like.
 
 ## Part 1
-[] Create default landing page
+[ ] Create default landing page
     [] Title & Logo
     [] Search bar
     [] Featured Products
