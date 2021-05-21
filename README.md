@@ -37,10 +37,10 @@ Sell whatever we like.
     - [ ] Rating
 
 > We can use any framework/language we want.
-+ React Frontend
++ ** React Frontend **
 + Backend:
-    - Express.js
-    - PHP?
+    - ** Express.js **
+    - PHP
     - Python (Flask, Django, FastAPI)
 
 - [ ] Cool stuff!
