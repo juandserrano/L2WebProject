@@ -39,9 +39,9 @@ Sell whatever we like.
 > We can use any framework/language we want.
 > React Frontend
 > Backend:
-    > Express.js
-    > PHP?
-    > Python (Flask, Django, FastAPI)
+    Express.js
+    PHP?
+    Python (Flask, Django, FastAPI)
 
 - [ ] Cool stuff!
     - [ ] Fading animations on images
