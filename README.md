@@ -10,7 +10,7 @@ Sell whatever we like.
     - [ ] Sign Up
     - [ ] View Cart
 - [ ] Create default landing page
-    - [ ] Title & Logo
+    - [ ] Title & Logo: AwesomeStuff
     - [ ] Search bar
     - [ ] Featured Products
     - [ ] Links to categories

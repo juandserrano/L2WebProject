@@ -4,86 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>AwesomeStuff</title>
+    <link rel="stylesheet" href="index.css">
+    <title>AwesomeStuff by Jiwuan</title>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid justify-content-around">
-          <a class="navbar-brand" href="#">AwesomeStuff</a>
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">View Cart</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-danger" type="submit">Search</button>
-            </form>
-        </div>
-      </nav>
 
       <div class="main-content">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+        <div class="hero-container">
+          <img class="hero-image" src="hero-picture.jpeg" alt="AwesomeStuff">
+          <div class="hero-text">
+            <h1>Awesome<span>Stuff</span></h1>
+            <h3>by Jiwuan</h3>
+        </div>
+        <div class="featured-container">
+          <h2 class="featured-titel">Featured Items</h2>
+          <div class="featured-row">
+            <div class="f1">
+              <img class="featured-image" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="Featured">
+            </div>
+            <div class="f2">
+              <img class="featured-image" src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="Featured">
+            </div>
+            <div class="f3">
+              <img class="featured-image" src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" alt="Featured">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="categories-container">
+          
+            <a>Men's Cloting</a>
+            <a>Women's Clothing</a>
+            <a>Jewerly</a>
+            <a>Electronics</a>
+          
+        </div>
+
+
+        <div class="all-products-container">
+          <div class="paper">
+            <h2>All Products</h2>
+            <div class="items-row">
+              <div class="item">
+                <img class="item-image" src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" alt="">
+                <div class="item-name">Mens Casual Slim Fit</div>
+              </div>
+              <div class="item">
+                <img class="item-image" src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" alt="">
+                <div class="item-name">John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet</div>
+              </div>
+              <div class="item">
+                <img class="item-image" src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" alt="">
+                <div class="item-name">Solid Gold Petite Micropave</div>
               </div>
             </div>
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+            <div class="items-row">
+              <div class="item">
+                <img class="item-image" src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" alt="">
+                <div class="item-name">White Gold Plated Princess</div>
+              </div>
+              <div class="item">
+                <img class="item-image" src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" alt="">
+                <div class="item-name">Pierced Owl Rose Gold Plated Stainless Steel Double</div>
+              </div>
+              <div class="item">
+                <img class="item-image" src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="">
+                <div class="item-name">WD 2TB Elements Portable External Hard Drive - USB 3.0</div>
+              </div>
+            </div>
+            <div class="items-row">
+              <div class="item">
+                <img class="item-image" src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" alt="">
+                <div class="item-name">SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</div>
+              </div>
+              <div class="item">
+                <img class="item-image" src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" alt="">
+                <div class="item-name">Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</div>
+              </div>
+              <div class="item">
+                <img class="item-image" src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" alt="">
+                <div class="item-name">WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive"</div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              2 of 3
-            </div>
-            <div class="col">
-              3 of 3
-            </div>
-          </div>
-        </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        </div>
+      </div> 
 </body>
 </html>
