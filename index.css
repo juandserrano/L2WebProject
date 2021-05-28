@@ -12,14 +12,19 @@ html{
     margin-bottom: 0px;
 }
 
+.hero-image{
+    width: 100%;
+}
+
 .hero-text {
     position: absolute;
-    bottom: 70%;
-    right: 60%;
+    top: 10vw;
+    left: 10vw;
+    width: 30%;
 }
 
 .hero-text h1 {
-    font-size: 80px;
+    font-size: 5vw;
     color: rgb(51, 109, 255);
 }
 
@@ -29,10 +34,7 @@ html{
 
 .hero-text h3 {
     text-align: end;
-}
-
-.hero-image{
-    width: 100%;
+    font-size: 1vw;
 }
 
 .featured-container {
