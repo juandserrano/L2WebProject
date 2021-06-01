@@ -7,6 +7,75 @@ html{
     padding: 0;
     background-color: rgb(255, 247, 234);
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    /* background:#e79e85 ; */
+    background: #d57149;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.navbar-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    float: right;
+    position: fixed;
+    text-align: center;
+    overflow: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    /* display: flex; */
+    /* margin-left: 70px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    position: relative;
+}
+
+nav a {
+    /* color: #fbc6a4; */
+    color: #e4e3e3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color:#85603f;
+}
+
+/* .search_bar { 
+    border: 3px solid saddlebrown;
+    border-right: none;
+    padding: 5px;
+    height: 13px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+
+} */
+
 .hero-container{
     width: 100%;
     margin-bottom: 0px;
@@ -17,6 +86,7 @@ html{
 }
 
 .hero-text {
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 10vw;
     left: 10vw;
@@ -25,11 +95,11 @@ html{
 
 .hero-text h1 {
     font-size: 5vw;
-    color: rgb(51, 109, 255);
+    color: #eaac7f;
 }
 
 .hero-text h1 span {
-    color: rgb(233, 233, 233);
+    color: #dfd3c3;
 }
 
 .hero-text h3 {
@@ -54,7 +124,7 @@ html{
     justify-content: space-around;
 }
 .featured-image{
-    height: 400px;
+    weight: 100%;
 }
 
 .categories-container {
@@ -90,7 +160,9 @@ html{
 .all-products-container {
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
 
 .paper{
     background-color: rgba(237, 237, 237, 0.701);
@@ -123,3 +195,43 @@ html{
     max-width: 400px;
     text-align: center;
 }
+
+.items-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.product {
+    position: relative;
+    width: 480px; 
+    height: 600px;
+    display: inline-block;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px;
+    border: 2px solid #fff;
+}
+
+img{
+    width: 100%;
+    transition: all linear 0.7s;
+}
+
+img.hover-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product:hover img{
+    opacity: 0;
+
+}
+
+.product:hover img.hover-img{
+    opacity: 1;
+}
+
