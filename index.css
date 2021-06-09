@@ -31,10 +31,11 @@ header::after {
 
 nav {
     width: 100%;
-    float: right;
+    /*float: right;*/
     position: fixed;
     text-align: center;
     overflow: auto;
+    z-index: 3;
 }
 
 nav ul {
@@ -55,9 +56,10 @@ nav li {
 }
 
 nav a {
-    /* color: #fbc6a4; */
-    color: #e4e3e3;
     text-decoration: none;
+    color: #e4e3e3;
+    text-shadow: 1px 1px 2px black;
+    
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -66,15 +68,13 @@ nav a:hover {
     color:#85603f;
 }
 
-/* .search_bar { 
+.search_bar { 
     border: 3px solid saddlebrown;
-    border-right: none;
     padding: 5px;
     height: 13px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
     outline: none;
-
-} */
+}
 
 .hero-container{
     width: 100%;
@@ -88,7 +88,7 @@ nav a:hover {
 .hero-text {
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    top: 10vw;
+    top: 5vw;
     left: 10vw;
     width: 30%;
 }
