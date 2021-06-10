@@ -6,15 +6,15 @@ Sell whatever we like.
 
 ## Part 1 (Visual)
 
-- [ ] Navbar
-    - [ ] Sign Up
-    - [ ] View Cart
-- [ ] Create default landing page
-    - [ ] Title & Logo: AwesomeStuff
-    - [ ] Search bar
-    - [ ] Featured Products
-    - [ ] Links to categories
-        - [ ] Define categories
+- [x] Navbar
+    - [x] Sign Up
+    - [x] View Cart
+- [x] Create default landing page
+    - [x] Title & Logo: AwesomeStuff
+    - [x] Search bar
+    - [x] Featured Products
+    - [x] Links to categories
+        - [x] Define categories
 - [ ] Create search results page
     - [ ] Search bar
     - [ ] List of products
@@ -28,13 +28,13 @@ Sell whatever we like.
     - [ ] Sort
         - [ ] by price (both ways)
 - [ ] Create product page
-    - [ ] Title
-    - [ ] Image
-    - [ ] Price
-    - [ ] Description
-    - [ ] Quantity Selector
-    - [ ] Add to cart button
-    - [ ] Rating
+    - [x] Title
+    - [x] Image
+    - [x] Price
+    - [x] Description
+    - [x] Quantity Selector
+    - [x] Add to cart button
+    - [x] Rating
 
 > We can use any framework/language we want.
 + **React Frontend**

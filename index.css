@@ -160,6 +160,10 @@ nav a:hover {
     border: 2px solid #fff;
 }
 
+.product:hover {
+    cursor: pointer;
+}
+
 img{
     width: 100%;
     height: 100%;
