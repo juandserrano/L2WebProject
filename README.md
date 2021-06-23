@@ -15,17 +15,17 @@ Sell whatever we like.
     - [x] Featured Products
     - [x] Links to categories
         - [x] Define categories
-- [ ] Create search results page
-    - [ ] List of products
-        - [ ] Images
-        - [ ] Title
-        - [ ] Price
-        - [ ] Rating
-    - [ ] Filter
-        - [ ] Price
-        - [ ] Rating
-    - [ ] Sort
-        - [ ] by price (both ways)
+- [x] Create search results page
+    - [x] List of products
+        - [x] Images
+        - [x] Title
+        - [x] Price
+        - [x] Rating
+    - [x] Filter
+        - [x] Price
+        - [x] Rating
+    - [x] Sort
+        - [x] by price (both ways)
 - [x] Create product page
     - [x] Title
     - [x] Image
@@ -34,3 +34,9 @@ Sell whatever we like.
     - [x] Quantity Selector
     - [x] Add to cart button
     - [x] Rating
+- [ ] Create categories page
+    - [ ] Title
+    - [ ] Category images
+    - [ ] Category names
+    - [ ] "Featured" in nav bar links back to index.html
+    - [ ] Search form default action link to search_results.html

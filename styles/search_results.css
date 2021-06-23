@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0 
+}
+html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 247, 234);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background: #d57149;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.navbar-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    overflow: auto;
+    z-index: 3;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e4e3e3;
+    text-shadow: 1px 1px 2px black;
+    
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color:#85603f;
+}
+
+.search_bar { 
+    border: 3px solid saddlebrown;
+    padding: 5px;
+    height: 13px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.hero-container{
+    width: 100%;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.hero-image{
+    width: 100%;
+    margin: 0px 0px -500px 0px;
+    top: 500px;
+}
+
+.hero-text {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 5vw;
+    left: 10vw;
+    width: 30%;
+}
+
+.hero-text h1 {
+    font-size: 5vw;
+    color: #eaac7f;
+}
+
+.hero-text h1 span {
+    color: #dfd3c3;
+}
+
+.hero-text h3 {
+    text-align: end;
+    font-size: 1vw;
+}
+
+.search-filter-form {
+    display: flex;
+    justify-content:flex-start;
+    margin: auto auto 20px 40px;
+}
+
+.search-filter-form > label {
+    align-self: center;
+    font-weight: 800;
+}
+
+#sort, #price-filter, #rating-filter {
+    margin: auto 20px auto 5px;
+    background-color: #bf8552;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #dfd3c3;
+    height: 40px;
+    font-size: medium;
+}
+
+.featured-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.result-titel {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 247, 249);
+    border-top: 1px solid rgba(51, 109, 255, 0.3);
+    border-bottom: 1px solid rgba(51, 109, 255, 0.3);
+    line-height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.categories-container a {
+    border-radius: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: 0.5s all;
+}
+
+.categories-container a:hover{
+    background-color: rgba(149, 179, 255, 0.118);
+    cursor: pointer;
+    text-decoration-color: rgba(51, 109, 255, 1);
+    transition: all 1s;
+}
+
+
+
+/* START OF PRODUCT STYLING */
+
+.paper{
+    box-shadow: 1px 1px 20px #df866019;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 5px 80px 40px 80px;
+    padding: 50px;
+    display: flex;
+    height: 500px;
+
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-image img{
+    
+    height: 450px;
+    transition: all linear 0.7s;
+    border-radius: 20px;
+}
+
+.product-image{
+    position:relative;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+img.hover-img{
+    position: absolute;
+    opacity: 0;
+    max-width: 345px;
+}
+.product-image:hover img{
+    opacity: 0;
+
+}
+.product-image:hover img.hover-img{
+    opacity: 1;
+}
+
+.price {
+    margin-top: 20px;
+}
+
+.price span {
+    font-weight: 700;
+}
+
+.add-to-cart {
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: #bf8552;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: #dfd3c3;
+}
+
+.add-to-cart:hover {
+    cursor: pointer;
+    background-color: #d7d741;
+    color: #bf8552;
+    border: 3px solid rgba(245, 124, 97, 0.55); 
+    
+    transition: all ease 0.5s;
+}
+
+.quantity {
+    margin-top: 20px;
+}
+.quantity-selector {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+
+.rating {
+    margin-top: 20px;
+    font-size: 50px;
+    color: gold;
+    align-self: flex-end;
+}
