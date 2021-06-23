@@ -16,7 +16,6 @@ Sell whatever we like.
     - [x] Links to categories
         - [x] Define categories
 - [ ] Create search results page
-    - [ ] Search bar
     - [ ] List of products
         - [ ] Images
         - [ ] Title
@@ -27,7 +26,7 @@ Sell whatever we like.
         - [ ] Rating
     - [ ] Sort
         - [ ] by price (both ways)
-- [ ] Create product page
+- [x] Create product page
     - [x] Title
     - [x] Image
     - [x] Price
@@ -35,14 +34,3 @@ Sell whatever we like.
     - [x] Quantity Selector
     - [x] Add to cart button
     - [x] Rating
-
-> We can use any framework/language we want.
-+ **React Frontend**
-+ Backend:
-    - **Express.js**
-    - PHP
-    - Python (Flask, Django, FastAPI)
-
-- [ ] Cool stuff!
-    - [ ] Fading animations on images
-    - [ ] Responsiveness
