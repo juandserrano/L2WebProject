@@ -34,9 +34,9 @@ Sell whatever we like.
     - [x] Quantity Selector
     - [x] Add to cart button
     - [x] Rating
-- [ ] Create categories page
-    - [ ] Title
-    - [ ] Category images
-    - [ ] Category names
-    - [ ] "Featured" in nav bar links back to index.html
-    - [ ] Search form default action link to search_results.html
+- [x] Create categories page
+    - [x] Title
+    - [x] Category images
+    - [x] Category names
+    - [x] "Featured" in nav bar links back to index.html
+    - [x] Search form default action link to search_results.html
