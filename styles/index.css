@@ -13,16 +13,6 @@ body {
     font-weight: 400;
 }
 
-header {
-    background: #d57149;
-}
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 .navbar-container {
     width: 100%;
     margin: 0 auto;

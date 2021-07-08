@@ -13,16 +13,6 @@ body {
     font-weight: 400;
 }
 
-header {
-    background: #d57149;
-}
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 .navbar-container {
     width: 100%;
     margin: 0 auto;
@@ -100,11 +90,6 @@ nav a:hover {
     color: #dfd3c3;
 }
 
-.hero-text h3 {
-    text-align: end;
-    font-size: 1vw;
-}
-
 .search-filter-form {
     display: flex;
     justify-content:flex-start;
@@ -125,13 +110,6 @@ nav a:hover {
     color: #dfd3c3;
     height: 40px;
     font-size: medium;
-}
-
-.featured-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .result-titel {
