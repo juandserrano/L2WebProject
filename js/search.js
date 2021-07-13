@@ -29,7 +29,6 @@ function render_results(list){
         div_image.className = 'product-image'
         div_image.appendChild(img1)
         div_image.appendChild(img2)
-        console.log('plpl')
     
         var div_details = document.createElement('div')
         div_details.className = 'product-details'
@@ -92,29 +91,22 @@ function render_results(list){
 sort_selection.addEventListener('change', event => {
     if (sort_selection.value == 'ascending') {
         sort_ascending()
-        console.log('sort ascending')
     } else if (sort_selection.value == 'descending') {
         sort_descending()
-        console.log('sort descending')
     }
 })
 
 price_filter.addEventListener('change', event => {
     if (price_filter.value == 'less50') {
         filter_search_price(50)
-        console.log('filtering to 50')
     } else if (price_filter.value == '50to100') {
         filter_search_price(100)
-        console.log('filtering to 50 to 100')
     } else if (price_filter.value == '100to200'){
         filter_search_price(200)
-        console.log('filtering to 100 to 200')
     } else if (price_filter.value == 'more200'){
         filter_search_price(999)
-        console.log('more than 200')
     } else if (price_filter.value == 'all'){
         filter_search_price(0)
-        console.log('no filter')
     }
 })
 
@@ -246,26 +238,3 @@ function filter_search_rating(rating) {
     } 
     render_results(filtered_list)
 }
-
-
-
-
-
-/*
-<div class="paper">
-            <div class="product-image">
-                <img src="image_hover/militaryJacket.jpg" alt="">
-                <img class="hover-img" src="image_hover/militaryJacketD.jpg" alt="">
-            </div>
-            <div class="product-details">
-              <h2 class="result-titel">Military Jacket</h2>
-              <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa alias odio quasi tempora minima doloremque fuga, molestiae deleniti dolorem, incidunt commodi vel? Voluptas, culpa, unde minus totam consequuntur tenetur error qui assumenda nulla quas soluta facilis veniam. Praesentium, veritatis saepe deleniti quis, a dolore recusandae aspernatur nam quasi voluptatibus quisquam aperiam nobis quidem eius debitis consectetur? Harum, libero neque.</div>
-              <div class="price"><span>Price: </span>$259.99 CAD</div>
-              <div class="quantity">
-                <span class="quantity-text">Quantity: </span>
-                <input class="quantity-selector" type="number" value="1">
-              </div>
-              <button type="button" class="add-to-cart">Add to Cart</button>
-              <div class="rating">&#10022;&#10022;&#10022;&#10022;&#10023;</div>
-            </div>
-</div>  */
