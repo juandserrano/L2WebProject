@@ -59,9 +59,14 @@ function render_results(list){
         qinput.className = 'quantity-selector'
         qinput.type = 'number'
         qinput.value = '1'
+        qinput.min = '1'
         quantity.appendChild(qinput)
         div_details.appendChild(quantity)
-    
+
+        qinput.addEventListener('change', event => {
+            price.innerHTML = "Price: $" + element.price * qinput.value + " CAD"
+        })
+
         var button = document.createElement('button')
         button.className = 'add-to-cart'
         button.innerHTML = 'Add to Cart'
