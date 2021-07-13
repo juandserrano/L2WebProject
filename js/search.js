@@ -5,6 +5,7 @@ var term = urlParams.get('search')
 var result_list = document.querySelector(".search_list")
 var sort_selection = document.querySelector("#sort")
 var price_filter = document.querySelector("#price-filter")
+var rating_filter = document.querySelector("#rating-filter")
 
 var search_results = []
 
@@ -95,20 +96,42 @@ sort_selection.addEventListener('change', event => {
 
 price_filter.addEventListener('change', event => {
     if (price_filter.value == 'less50') {
-        filter_search(50)
+        filter_search_price(50)
         console.log('filtering to 50')
     } else if (price_filter.value == '50to100') {
-        filter_search(100)
+        filter_search_price(100)
         console.log('filtering to 50 to 100')
     } else if (price_filter.value == '100to200'){
-        filter_search(200)
+        filter_search_price(200)
         console.log('filtering to 100 to 200')
     } else if (price_filter.value == 'more200'){
-        filter_search(999)
+        filter_search_price(999)
         console.log('more than 200')
     } else if (price_filter.value == 'all'){
-        filter_search(0)
+        filter_search_price(0)
         console.log('no filter')
+    }
+})
+
+rating_filter.addEventListener('change', event => {
+    if (rating_filter.value == 'one') {
+        filter_search_rating(1)
+        
+    } else if (rating_filter.value == 'two') {
+        filter_search_rating(2)
+        
+    } else if (rating_filter.value == 'three'){
+        filter_search_rating(3)
+        
+    } else if (rating_filter.value == 'four'){
+        filter_search_rating(4)
+        
+    } else if (rating_filter.value == 'five'){
+        filter_search_rating(5)
+        
+    } else if (rating_filter.value == 'all'){
+        filter_search_rating(0)
+       
     }
 })
 
@@ -145,7 +168,7 @@ function sort_descending() {
     render_results(search_results)
 }
 
-function filter_search(price) {
+function filter_search_price(price) {
     var filtered_list = []
 
     if (price == 0) {
@@ -153,19 +176,65 @@ function filter_search(price) {
     }
     if (price == 999) {
         for (var i = 0; i < search_results.length; i++) {
-            if (search_results[i].price > 200) {
+            if (search_results[i].price >= 200) {
                 filtered_list.push(search_results[i])
             }
         }
     } else if (price == 200) {
         for (var i = 0; i < search_results.length; i++) {
-            if (search_results[i].price <= 200) {
+            if (search_results[i].price < 200 && search_results[i].price >= 100) {
                 filtered_list.push(search_results[i])
             }
         }
     } else if (price == 100) {
         for (var i = 0; i < search_results.length; i++) {
-            if (search_results[i].price <= 100) {
+            if (search_results[i].price < 100 && search_results[i].price > 51) {
+                filtered_list.push(search_results[i])
+            }
+        }
+    } else if (price == 50) {
+        for (var i = 0; i < search_results.length; i++) {
+            if (search_results[i].price <= 50) {
+                filtered_list.push(search_results[i])
+            }
+        }
+    } 
+    render_results(filtered_list)
+}
+
+function filter_search_rating(rating) {
+    var filtered_list = []
+
+    if (rating == 0) {
+        return render_results(search_results)
+    }
+    if (rating == 5) {
+        for (var i = 0; i < search_results.length; i++) {
+            if (search_results[i].rating == 5) {
+                filtered_list.push(search_results[i])
+            }
+        }
+    } else if (rating == 4) {
+        for (var i = 0; i < search_results.length; i++) {
+            if (search_results[i].rating >= 4) {
+                filtered_list.push(search_results[i])
+            }
+        }
+    } else if (rating == 3) {
+        for (var i = 0; i < search_results.length; i++) {
+            if (search_results[i].rating >= 3) {
+                filtered_list.push(search_results[i])
+            }
+        }
+    } else if (rating == 2) {
+        for (var i = 0; i < search_results.length; i++) {
+            if (search_results[i].rating >= 2) {
+                filtered_list.push(search_results[i])
+            }
+        }
+    } else if (rating == 1) {
+        for (var i = 0; i < search_results.length; i++) {
+            if (search_results[i].rating >= 1) {
                 filtered_list.push(search_results[i])
             }
         }
