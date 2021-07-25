@@ -83,7 +83,7 @@ function render_results(list){
         paper.appendChild(div_details)
     
         result_list.appendChild(paper)
-    });
+    })
 }
 
 
