@@ -8,7 +8,7 @@ var products = [{
 },
 {
     name: "Stripe Pattern Coat",
-    description: "light-grey and dark-grey are combined with a thicker pattern. It's well-matched with a dark colour jeans.",
+    description: "Light-grey and dark-grey are combined with a thicker pattern. It's well-matched with a dark colour jeans.",
     price: 350,
     rating: 4,
     img_url: "image_hover/stripePatternCoat.jpg",
