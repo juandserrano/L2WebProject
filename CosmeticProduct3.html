@@ -60,6 +60,17 @@
             <div class="rating">&#10022;&#10022;&#10022;&#10022;&#10023;</div>
           </div>
         </div>
-        <script type="text/javascript" src="./js/products.js"></script>
+        <script type="text/javascript" src="./js/products.js"></script><script type="text/javascript">
+          var element = products[9]
+          var price = document.getElementsByClassName('price')[0]
+          price.innerHTML = "Price: $" + element.price + " CAD"
+          var qinput = document.getElementsByClassName('quantity-selector')[0]
+          qinput.min = '1'
+          qinput.addEventListener('change', event => {
+              price.innerHTML = "Price: $" + element.price * qinput.value + " CAD"
+          })
+          var description = document.getElementsByClassName('description')[0]
+          description.innerHTML = element.description
+        </script>
 </body>
 </html>
