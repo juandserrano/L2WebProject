@@ -22,7 +22,9 @@
           <li><a href="#">LOGIN</a></li>
           <li><a href="#">JOIN</a></li>
           <li><a href="#">CART</a></li>
-          <li><form action="search_results.html"><input class="search_bar" name="search" type="text" placeholder="Search..."></form></li>
+          <li><form action="search_results.html"><input class="search_bar" name="search" type="text" placeholder="Search..." onkeyup="create_select_option();"><br>
+            <ol id="products" style="display:none"></ol>
+            </form></li>
         </ul>
       </nav>
     </div>
@@ -74,5 +76,6 @@
           var description = document.getElementsByClassName('description')[0]
           description.innerHTML = element.description
         </script>
+        <script type="text/javascript" src="./js/searchbar.js"></script>
 </body>
 </html>
