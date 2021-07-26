@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/products.css">
+    <title>AwesomeStuff</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <div class="navbar-container">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="category.html">CATEGORIES</a></li>
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">JOIN</a></li>
+          <li><a href="#">CART</a></li>
+          <li><form action="search_results.html"><input class="search_bar" name="search" type="text" placeholder="Search..."></form></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+      <div class="main-content">
+        <div class="hero-container">
+          <img class="hero-image" src="image/logo_image.jpg" alt="AwesomeStuff">
+          <div class="hero-text">
+            <h1>Awesome<span>Stuff</span></h1>
+            <h3></h3>
+          </div>
+        </div>
+        <div class="categories-container">
+          <a href="clothes.html">Clothes</a>
+          <a href="shoes.html">Shoes</a>
+          <a href="cosmetic.html">Cosmetics</a>
+          <a href="accessory.html">Accessories</a>
+        </div>
+        <div class="featured-container">
+          <h2 class="featured-titel">Kaki Jacket</h2>
+        </div>
+
+        <div class="paper">
+          <div class="product-image">
+              <img src="image_hover/clothes/kakiJacket.jpg" alt="">
+              <img class="hover-img" src="image_hover/clothes/kakiJacketD.jpg" alt="">
+          </div>
+          <div class="product-details">
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa alias odio quasi tempora minima doloremque fuga, molestiae deleniti dolorem, incidunt commodi vel? Voluptas, culpa, unde minus totam consequuntur tenetur error qui assumenda nulla quas soluta facilis veniam. Praesentium, veritatis saepe deleniti quis, a dolore recusandae aspernatur nam quasi voluptatibus quisquam aperiam nobis quidem eius debitis consectetur? Harum, libero neque.</div>
+            <div class="price"><span>Price: </span>$150 CAD</div>
+            <div class="quantity">
+              <span class="quantity-text">Quantity: </span>
+              <input class="quantity-selector" type="number" value="1">
+            </div>
+            <button type="button" class="add-to-cart">Add to Cart</button>
+            <div class="rating">&#10022;&#10022;&#10022;&#10022;&#10023;</div>
+          </div>
+        </div>
+        <script type="text/javascript" src="./js/products.js"></script>
+</body>
+</html>
