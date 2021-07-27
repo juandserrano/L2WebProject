@@ -1,22 +1,26 @@
+// Grab wurld query string form search results
 var queryString = window.location.search;
 var urlParams = new URLSearchParams(queryString);
 var term = urlParams.get('search')
 
+// Make array of HTML tags to be able to manipulate them
 var result_list = document.querySelector(".search_list")
 var sort_selection = document.querySelector("#sort")
 var price_filter = document.querySelector("#price-filter")
 var rating_filter = document.querySelector("#rating-filter")
 
+// initialize an empty result array and add products that contain the query string
 var search_results = []
-
 for (var i = 0; i < products.length; i++) {
     if (products[i].name.toLowerCase().includes(term.toLowerCase())) {
         search_results.push(products[i])
     }
 }
 
+// Call function to re-render results
 render_results(search_results)
 
+// Function that builds the DOM and renders the result
 function render_results(list){
     result_list.innerHTML = ""
     list.forEach(element => {
@@ -87,7 +91,9 @@ function render_results(list){
 }
 
 
+// EVENT LISTENERS
 
+// sort
 sort_selection.addEventListener('change', event => {
     if (sort_selection.value == 'ascending') {
         sort_ascending()
@@ -96,6 +102,7 @@ sort_selection.addEventListener('change', event => {
     }
 })
 
+// price
 price_filter.addEventListener('change', event => {
     if (price_filter.value == 'less50') {
         filter_search_price(50)
@@ -110,6 +117,7 @@ price_filter.addEventListener('change', event => {
     }
 })
 
+// rating
 rating_filter.addEventListener('change', event => {
     if (rating_filter.value == 'one') {
         filter_search_rating(1)
@@ -132,6 +140,7 @@ rating_filter.addEventListener('change', event => {
     }
 })
 
+// helper functions to sort
 function compare_asc(a, b) {
     
     let comparison = 0;
@@ -165,6 +174,8 @@ function sort_descending() {
     render_results(search_results)
 }
 
+
+// Function to filter based on price
 function filter_search_price(price) {
     var filtered_list = []
 
@@ -199,6 +210,7 @@ function filter_search_price(price) {
     render_results(filtered_list)
 }
 
+// Function to filter based on rating
 function filter_search_rating(rating) {
     var filtered_list = []
 
