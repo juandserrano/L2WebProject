@@ -76,6 +76,7 @@
           $sql = "SELECT * FROM products_t WHERE name LIKE '%$query%'";
           $result = $conn->query($sql);
           while($row = $result->fetch_assoc()) {
+            $calculated_price = $row["PRICE"];
             echo '
             <div class="paper">
               <div class="product-image">
@@ -85,8 +86,8 @@
               <div class="product-details">
                 <h2 class="result-titel">'.$row["NAME"].'</h2>
                 <div class="description">'.$row["DESCRIPTION"].'</div>
-                <div class="price">Price: $'.$row["PRICE"].' CAD</div>
-                <div class="quantity"><span class="quantity-text">Quantity: </span><input class="quantity-selector" type="number" value="1" min="1"></div>
+                <div class="price">Price: $'.$calculated_price.' CAD</div>
+                <div class="quantity"><span class="quantity-text">Quantity: </span><input id="qselector" class="quantity-selector" type="number" value="1" min="1"></div>
                 <button class="add-to-cart" type="button">Add to Cart</button>
                 <div class="rating">
                 ';
