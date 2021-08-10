@@ -56,7 +56,7 @@ else
 	         var li = document.createElement("li"); //create select element
 		 var a = document.createElement("a");
 
-                 a.href = "search_results.html?search=" + result[i];
+                 a.href = "search_results.php?search=" + result[i];
 	
 
 		 a.appendChild(document.createTextNode(result[i]));
